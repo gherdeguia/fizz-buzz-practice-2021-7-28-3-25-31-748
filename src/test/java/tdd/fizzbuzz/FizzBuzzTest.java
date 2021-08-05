@@ -1,7 +1,7 @@
 package tdd.fizzbuzz;
 
 import org.junit.jupiter.api.Test;
-
+import static org.assertj.core.api.Assertions.assertThat;
 /*
     Test Cases:
 
@@ -21,7 +21,7 @@ public class FizzBuzzTest {
     void should_return_order_number_when_count_off_given_normal_case_order_number(){
         //given
         int givenNumber = 1;
-        FizzBuzzTest fizzbuzz = new FizzBuzzTest();
+        FizzBuzz fizzbuzz = new FizzBuzz();
 
         //when
         String result = fizzbuzz.countoff(givenNumber);
