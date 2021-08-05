@@ -18,48 +18,48 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class FizzBuzzTest {
 
-    String expectedResult;
+    String resultValue;
 
     @Test
     void should_return_order_number_when_count_off_given_normal_case_order_number(){
         //given
         int givenNumber = 1;
-        expectedResult = "1";
+        resultValue = "1";
         FizzBuzz fizzbuzz = new FizzBuzz();
 
         //when
         String result = fizzbuzz.countOff(givenNumber);
 
         //then
-        assertThat(result).isEqualTo(expectedResult);
+        assertThat(result).isEqualTo(resultValue);
     }
 
     @Test
     void should_return_fizz_when_count_off_given_multiple_of_3() {
         //given
         int givenNumber = 3;
-        expectedResult = "Fizz";
+        resultValue = "Fizz";
         FizzBuzz fizzbuzz = new FizzBuzz();
 
         //when
         String result = fizzbuzz.countOff(givenNumber);
 
         //then
-        assertThat(result).isEqualTo(expectedResult);
+        assertThat(result).isEqualTo(resultValue);
     }
 
     @Test
     void should_return_buzz_when_count_off_given_multiple_of_5() {
         //given
         int givenNumber = 5;
-        expectedResult = "Buzz";
+        resultValue = "Buzz";
         FizzBuzz fizzbuzz = new FizzBuzz();
 
         //when
         String result = fizzbuzz.countOff(givenNumber);
 
         //then
-        assertThat(result).isEqualTo(expectedResult);
+        assertThat(result).isEqualTo(resultValue);
     }
 
 
