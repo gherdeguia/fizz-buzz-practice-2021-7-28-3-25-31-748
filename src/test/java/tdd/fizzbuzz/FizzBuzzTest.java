@@ -24,10 +24,24 @@ public class FizzBuzzTest {
         FizzBuzz fizzbuzz = new FizzBuzz();
 
         //when
-        String result = fizzbuzz.countoff(givenNumber);
+        String result = fizzbuzz.countOff(givenNumber);
 
         //then
         assertThat(result).isEqualTo("1");
+
+    }
+
+    @Test
+    void should_return_order_number_when_count_off_given_multiple_of_3() {
+        //given
+        int givenNumber = 3;
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        //when
+        String result = fizzbuzz.countOff(givenNumber);
+
+        //then
+        assertThat(result).isEqualTo("Fizz");
 
     }
 }
