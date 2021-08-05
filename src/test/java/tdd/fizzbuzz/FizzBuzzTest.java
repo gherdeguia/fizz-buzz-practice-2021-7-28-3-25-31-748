@@ -93,7 +93,7 @@ public class FizzBuzzTest {
     @Test
     void should_return_buzz_when_count_off_given_multiple_of_5_and_7() {
         //given
-        int givenNumber = 30;
+        int givenNumber = 35;
         resultValue = "BuzzWhizz";
         FizzBuzz fizzbuzz = new FizzBuzz();
 

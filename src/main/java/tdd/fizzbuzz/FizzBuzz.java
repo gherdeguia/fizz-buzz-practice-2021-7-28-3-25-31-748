@@ -7,6 +7,9 @@ public class FizzBuzz {
         if(givenNumber % 3 == 0 && givenNumber % 5 == 0){
             return "FizzBuzz";
         }
+        else if(givenNumber % 5 == 0 && givenNumber % 7 == 0){
+            return "BuzzWhizz";
+        }
         else if(givenNumber % 3 == 0){
             return "Fizz";
         }
