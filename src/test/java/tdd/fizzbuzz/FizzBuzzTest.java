@@ -75,4 +75,18 @@ public class FizzBuzzTest {
         //then
         assertThat(result).isEqualTo(resultValue);
     }
+
+    @Test
+    void should_return_buzz_when_count_off_given_multiple_of_3_and_5() {
+        //given
+        int givenNumber = 15;
+        resultValue = "FizzBuzz";
+        FizzBuzz fizzbuzz = new FizzBuzz();
+
+        //when
+        String result = fizzbuzz.countOff(givenNumber);
+
+        //then
+        assertThat(result).isEqualTo(resultValue);
+    }
 }
