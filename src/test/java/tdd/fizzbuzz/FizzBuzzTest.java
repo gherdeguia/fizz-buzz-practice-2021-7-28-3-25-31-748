@@ -28,11 +28,10 @@ public class FizzBuzzTest {
 
         //then
         assertThat(result).isEqualTo("1");
-
     }
 
     @Test
-    void should_return_order_number_when_count_off_given_multiple_of_3() {
+    void should_return_fizz_when_count_off_given_multiple_of_3() {
         //given
         int givenNumber = 3;
         FizzBuzz fizzbuzz = new FizzBuzz();
