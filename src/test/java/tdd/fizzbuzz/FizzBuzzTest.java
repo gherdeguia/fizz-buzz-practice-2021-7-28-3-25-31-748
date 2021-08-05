@@ -42,6 +42,5 @@ public class FizzBuzzTest {
 
         //then
         assertThat(result).isEqualTo("Fizz");
-
     }
 }
